@@ -1,0 +1,269 @@
+.top-header {
+  position: fixed;
+  background-color: #52f023;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  color: blue;
+  padding: 0.5rem 0.5rem;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Horizontal li a{
+  text-decoration: none;
+}
+
+.Menu-Vertical {
+  padding 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 10rem;
+  background-color:aliceblue;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li{
+  padding: 0.625rem 0.625rem 0.625rem;
+}
+
+.seccion-inicio{
+  padding: 3.75rem 1.25rem;
+  background: white;
+}
+
+.cont-gral-inicio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 1.875rem;
+}
+
+
+.cont-inicio-texto{
+  flex:1;
+}
+
+.cont-inicio-texto h2{
+  color: green;
+  margin-bottom: 1.25rem;
+}
+
+.cont-inicio-texto p{
+  color: black;
+  line-height: 1.6;
+}
+
+.cont-inicio-img{
+  flex: 1;
+  text-align: center;
+}
+
+.cont-inicio-img img{
+  width: 80%
+  max-width: 9.375rem;
+  border-radius: 0.625rem;
+}
+
+
+.seccion-servicio{
+  padding: 3.75rem 1.25rem;
+  background: white;
+}
+
+.cont-gral-servicio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+
+.cont-servicio-texto{
+  flex:1;
+}
+
+.cont-servicio-texto h2{
+  color: green;
+  margin-bottom: 1.25rem;
+}
+
+.cont-servicio-texto p{
+  color: black;
+  line-height: 1.6;
+}
+
+.cont-servicio-img{
+  flex: 1;
+  text-align: center;
+}
+
+.cont-servicio-img img{
+  width: 70%
+  max-width: 31.25rem;
+  border-radius: 0.625rem;
+}
+
+.seccion-formulario {
+  background-color: aliceblue;
+  padding: 3.125rem 1.25rem;
+  display: flex; /*se ponga como fila*/
+  justify-content: center;
+}
+.div-cont-formulario {
+  background-color: bisque;
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.div-cont-formulario h2 {
+  color: brown;
+  margin-bottom: 0.625rem; /*no estar tan pegado con las cajas de texto*/
+}
+.formulario .campo {
+  margin-bottom: 1.25rem;
+}
+.formulario label {
+  display: block;
+  font-size: 600;
+  margin-bottom: 0.5rem;
+}
+.formulario input[type="text"],
+.formulario select {
+  /*se llaman los dos porq se van hacer la misma cosas*/
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.188rem solid #915a03;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+.checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.checkbox li,
+.lista-radio li {
+  margin-bottom: 0.5rem;
+}
+.checkbox input,
+.lista-radio input {
+  margin-right: 0.625rem; /*entre el checkbox y el texto*/
+}
+.formulario button {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.438rem;
+  cursor: pointer;
+  font-size: 0.938rem;
+}
+
+/* Footer general */
+.footer {
+  background-color: #1e364b; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-brand,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 15rem;
+}
+
+.footer-logo {
+  width: 8rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    min-width: 100%;  
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+
+  .social-icon {
+    margin-bottom: 0.5rem;
+  }
+}
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }

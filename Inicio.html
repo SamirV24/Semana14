@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MaxiCentro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <!---Logo y Menus -->
+    <nav class="top-header">
+      <a href= "" class: "logo">
+        <img height="40" width="180" src="Pictures\logo.png" alt=""/>
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+   <button class="menu-toggle" aria-label="Abrir menú">
+    &#9776;
+    <!-- Ícono de hamburguesa -->
+   </button>
+      <ul class="Menu-Horizontal">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="">¿Quienes Somos?</a></li>
+        <li><a href="">Beneficios
+          <ul class="Menu-Vertical">
+            <li><a href="">Televisores</a></li>
+            <li><a href="">Parlantes</a></li>
+            <li><a href="">Impresoras</a></li>
+          </ul>
+          </a>
+        </li>
+        <li><a href="">Ofertas</a></li>
+        <li><a href="">Contactanos</a></li>
+        <li><a href="index.html">Cerrar Sesion</a></li>
+      </ul>
+    </nav>
+    <!-- Secciones Inicio-->
+    <section class= "seccion-inicio">
+      <div class="cont-gral-inicio">
+      <div class="cont-inicio-texto">   
+        <h2>¿Quienes Somos?</h2>
+        <p>En 2002 ingresamos al mercado peruano bajo la marca Tottus y posteriormente al mercado chileno en 2004. Pertenecemos a Falabella, una de las mayores compañías de retail de América Latina con presencia en Chile, Perú, Colombia, Argentina, Brasil, Uruguay y México.        </p>   
+      </div>
+      <div class="cont-inicio-img">
+        <img src="Pictures\imagen1.png" alt=""/> 
+      </div>
+      </div>
+    </section>
+    <!-- Secciones Servicio-->
+    <section class= "seccion-servicio">
+      <div class="cont-gral-servicio">
+      <div class="cont-servicio-texto">   
+        <h2>Parte 2</h2>
+        <p>En Tottus operamos hipermercados, supermercados y formatos de precio conveniente (Hiperbodega y Superbodega Precio Uno). Contamos con 155 tiendas y presencia online en Chile y Perú, que nos permiten estar más cerca de nuestros clientes y ofrecer un servicio de excelencia y calidad.</p>   
+      </div>
+      <div class="cont-servicio-img">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rdnfrSjgx1w?si=UzkUwduAEH6eFJ5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      </div>
+    </section>
+
+    <!--Contacto-->>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario para Contactarnos</h2>
+        <p>Complete todos los campos.</p>
+        <form class="formulario">
+          <!--Input Text-->
+          <div class="campo">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text"id="nombre" name="nombre" placeholder="Ingrese su nombre"></input>
+          </div>
+          <!--Lista Despegable-->
+          <div class="campo">
+            <label for="pais">Pais:</label>
+            <select id="pais"name="pais">
+              <option value="">Seleccione Pais</option>
+              <option value="colombia">Colombia</option>
+              <option value="brazil">Brazil</option>
+              <option value="mexico">Mexico</option>
+              <option value="argentina">Argentina</option>
+              <option value="paraguay">Paraguay</option>
+            </select>
+          </div>
+          <!--Lista Checkbox-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class ="checkbox"><!--lista-->
+              <li><label><input type="checkbox" name="Intereses" value="Electrodomesticos">Electrodomesticos</label>
+                <li><label><input type="checkbox" name="Intereses" value="Abarrotes">Abarrotes</label>
+                  <li><label><input type="checkbox" name="Intereses" value="Carnes">Carnes</label>
+                    <li><label><input type="checkbox" name="Intereses" value="Tecnologia">Tecnologia</label>
+                      <li><label><input type="checkbox" name="Intereses" value="Ropa">Ropa</label>
+            </ul>
+          </div>
+          <!--Lista Radio-->
+          <div class="campo">
+            <label>Genero:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="Genero" value="masculino">Masculino</label> </li>
+                <li><label><input type="radio" name="Genero" value="femenino">Femenino</label> </li>
+                <li><label><input type="radio" name="Genero" value="no-comentar">No Comentar</label> </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+      <!-- PIE DE PAGINA -->
+
+      <section id="footer">
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Logo y nombre de sitio -->
+            <div class="footer-brand">
+              <img
+                src="Pictures\logo.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+              <p>Tottus</p>
+              <small>© 2025 Todos los derechos reservados</small>
+            </div>
+  
+            <!-- Enlaces legales -->
+            <div class="footer-links">
+              <h4>Legal</h4>
+              <a href="Pictures\Documento.pdf"
+                >Política de Privacidad</a
+              >
+              <!-- Dentro de href llama a un documento pdf con la poltica-->
+              <a href="#">Términos y Condiciones</a>
+              <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+              <a href="Pictures\Documento.pdf">Protección de Datos</a>
+            </div>
+  
+            <!-- Redes sociales con íconos personalizados -->
+            <div class="footer-social">
+              <h4>Síguenos</h4>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="Instagram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </section>
+      <script src="menu_toggle.js"></script>
+  </body>
+</html>
